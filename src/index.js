@@ -1,5 +1,7 @@
+//Consultar el archivo README para más información sobre los módulos.
+
 console.log(
   "Ejercicio de configuracion en GitHub de la asignatura Proyecto Intermodular"
 );
 
-console.log("Hola Mundo :)");
+console.log("Hola Mundo! :)");
