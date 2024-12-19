@@ -1,0 +1,65 @@
+{
+    "recipes": [
+      {
+        "name": "Classic Margherita Pizza",
+        "ingredients": ["pizza dough", "tomato sauce", "mozzarella cheese", "basil", "olive oil"],
+        "preference": "vegetarian",
+        "description": "Spread tomato sauce over rolled-out pizza dough. Top with mozzarella cheese and fresh basil leaves. Drizzle olive oil and bake at 220°C (425°F) for 10-15 minutes."
+      },
+      {
+        "name": "Vegan Buddha Bowl",
+        "ingredients": ["quinoa", "chickpeas", "avocado", "kale", "lemon tahini dressing"],
+        "preference": "vegan",
+        "description": "Cook quinoa according to package instructions. Arrange cooked quinoa, chickpeas, sliced avocado, and kale in a bowl. Drizzle with lemon tahini dressing before serving."
+      },
+      {
+        "name": "Spaghetti Carbonara",
+        "ingredients": ["spaghetti", "eggs", "parmesan cheese", "bacon", "black pepper"],
+        "preference": "none",
+        "description": "Cook spaghetti until al dente. Sauté bacon until crispy. Mix eggs and parmesan cheese in a bowl. Combine hot pasta, bacon, and egg mixture. Toss well and season with black pepper."
+      },
+      {
+        "name": "Vegetable Stir-Fry",
+        "ingredients": ["broccoli", "carrots", "bell peppers", "soy sauce", "ginger"],
+        "preference": "vegan",
+        "description": "Heat oil in a pan. Add chopped vegetables and stir-fry until tender. Add soy sauce and grated ginger. Cook for an additional 2-3 minutes and serve."
+      },
+      {
+        "name": "Caesar Salad",
+        "ingredients": ["romaine lettuce", "croutons", "parmesan cheese", "Caesar dressing"],
+        "preference": "vegetarian",
+        "description": "Chop romaine lettuce and toss with croutons. Add grated parmesan cheese and drizzle with Caesar dressing. Mix well before serving."
+      },
+      {
+        "name": "Vegan Lentil Soup",
+        "ingredients": ["lentils", "carrots", "celery", "onions", "vegetable stock"],
+        "preference": "vegan",
+        "description": "Sauté onions, carrots, and celery until softened. Add lentils and vegetable stock. Simmer for 20-25 minutes until lentils are tender. Season to taste."
+      },
+      {
+        "name": "Chicken Curry",
+        "ingredients": ["chicken", "coconut milk", "curry powder", "onions", "garlic"],
+        "preference": "none",
+        "description": "Sauté onions and garlic until fragrant. Add chicken pieces and cook until browned. Stir in curry powder and coconut milk. Simmer for 20 minutes and serve with rice."
+      },
+      {
+        "name": "Vegetarian Lasagna",
+        "ingredients": ["lasagna noodles", "ricotta cheese", "spinach", "tomato sauce", "mozzarella cheese"],
+        "preference": "vegetarian",
+        "description": "Layer lasagna noodles with ricotta cheese, spinach, and tomato sauce in a baking dish. Top with mozzarella cheese and bake at 180°C (350°F) for 30-35 minutes."
+      },
+      {
+        "name": "Vegan Pancakes",
+        "ingredients": ["flour", "almond milk", "baking powder", "maple syrup", "vanilla extract"],
+        "preference": "vegan",
+        "description": "Mix flour, almond milk, baking powder, and vanilla extract into a smooth batter. Pour onto a heated non-stick pan and cook until bubbles form. Flip and cook the other side. Serve with maple syrup."
+      },
+      {
+        "name": "Grilled Steak",
+        "ingredients": ["steak", "salt", "pepper", "olive oil", "garlic"],
+        "preference": "none",
+        "description": "Season steak with salt, pepper, and olive oil. Grill on high heat for 3-5 minutes per side, depending on desired doneness. Rest for a few minutes and serve with garlic butter."
+      }
+    ]
+  }
+  
