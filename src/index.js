@@ -2,16 +2,19 @@
 
 console.log("Annamaria Marino | 2024 | Florida Universitària \n");
 console.log(
-  "Ejercicio de configuracion en GitHub de la asignatura Proyecto Intermodular (PI_003_Github Archivo)"
+  "Ejercicio de configuracion prototipo de servidor (PI_004_Prototipo)"
 );
 
-const rl = require("readline-sync");
+//npm run dev
+const express = require("express");
+const app = express();
 
-const askName = () => rl.question("Hola Mundo! :) cual es tu nombre? ");
+app.set("port", process.env.PORT || 8080);
 
-const saludo = () => {
-  const nombre = askName();
-  return "Hola " + nombre + ", encantado de saludarte!";
-};
+//Routes
+app.use(require("./routes/index"));
 
-console.log(saludo());
+//Se inicia el servidor
+app.listen(app.get("port"), () => {
+  console.log("Hola desde el puerto: " + app.get("port"));
+});
