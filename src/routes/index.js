@@ -17,7 +17,7 @@ loadRecipes();
 router.get("/", (req, res) => {
   console.log("Alguien ha accedido al servidor");
   res.send(
-    "Bienvenido al servidor, puedes acceder a las siguientes rutas: /about; /rutaRecetas; /rutaPizza; /rutaVegetarian; /rutaTomatoSauce"
+    "Bienvenido al servidor, puedes acceder a las siguientes rutas:\n RUTAS GET: /about; /rutaRecetas; /rutaPizza; /rutaVegetarian; /rutaTomatoSauce\n RUTAS POST: /rutaPOST; /formulario; /agregarReceta; /buscarReceta; /filtrarPorIngrediente"
   );
 });
 
@@ -61,6 +61,53 @@ router.get("/rutaTomatoSauce", (req, res) => {
     //utilizamos includes para el array ingredients
   );
   res.json(response);
+});
+
+//POST
+
+router.post("/rutaPOST", (req, res) => {
+  console.log("Alguien ha accedido a la ruta POST.");
+  res.send("hola haciendo pruebas con la ruta POST.");
+});
+
+router.post("/formulario", (req, res) => {
+  req.body =
+    "En el req body guardaremos los datos del formulario para enviarlos a la base de datos (ej. registro)";
+  console.log("Alguien ha accedido al formulario.");
+  res.json({ nombre: "Cosas POST para un formulario." });
+});
+
+router.post("/agregarReceta", (req, res) => {
+  req.body =
+    "En el req body guardaremos los datos de nuevas recetas que el usuario quiere agregar";
+  console.log("Alguien ha intentado agregar una nueva receta.");
+  res.json({ mensaje: "Receta agregada." });
+});
+
+router.post("/buscarReceta", (req, res) => {
+  console.log("Alguien esta buscando una receta.");
+  //En el req body guardaremos el nombre de la receta para buscar
+  req.body = "Classic Margherita Pizza";
+  const nombre = req.body;
+  const recetaEncontrada = recipes.recipes.find(
+    (recipe) => recipe.name === nombre
+  );
+  if (recetaEncontrada) {
+    res.json(recetaEncontrada);
+  } else {
+    res.send("Receta no encontrada");
+  }
+});
+
+router.post("/filtrarPorIngrediente", (req, res) => {
+  console.log("Alguien esta filtrando por ingrediente.");
+  //En el req body guardaremos los filtros a aplicar
+  req.body = "parmesan cheese";
+  const ingrediente = req.body;
+  const filtroAplicado = recipes.recipes.filter((recipe) =>
+    recipe.ingredients.includes(ingrediente)
+  );
+  res.json(filtroAplicado);
 });
 
 module.exports = router;
