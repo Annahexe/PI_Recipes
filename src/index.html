@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recetas</title>
+  </head>
+  <body>
+    <header>
+      <h1>Proyecto Intermodular - Recetas 🍝</h1>
+    </header>
+
+    <form action="http://localhost:8080/formulario" method="post">
+      <fieldset>
+        <legend><b>📝 Registro | Ruta Post /formulario</b></legend>
+        <p>Los campos marcados con un asterisco son obligatorios.</p>
+        <label for="nombre">* Nombre: <input type="text" name="nombre" required /></label><br />
+        <label for="apellido">* Apellido: <input type="text" name="apellido" required /></label><br />
+        <label for="email">* Correo Electronico: <input type="email" name="email" required /></label><br />
+        <label for="password"
+          >* Password:
+          <input
+            type="text"
+            name="password"
+            required
+            pattern="^[a-zA-Z0-9_.-]{5,}$"
+            title="letras del alfabeto inglés, números, guión '-', subrayado '_', punto '.', mínimo 5 caracteres" /></label
+        ><br />
+        <label for="fecha_nacimiento">Fecha de nacimiento: <input type="date" name="fecha_nacimiento" /></label><br /><br />
+        <button type="submit">Envio Registro</button>
+      </fieldset>
+    </form>
+
+    <br />
+
+    <form action="http://localhost:8080/addRecipe" method="post">
+      <fieldset>
+        <legend><b>👩‍🍳 Add Recipe | Ruta Post /addRecipe</b></legend>
+        <label for="name">Name: <input type="text" name="name" required /></label><br />
+        <label for="ingredients">Ingredients: <input type="text" name="ingredients" required /></label><br />
+        <label for="preference"
+          >Preference: <input type="radio" name="preference" value="None" checked />None <input type="radio" name="preference" value="Vegetarian" />Vegetarian
+          <input type="radio" name="preference" value="Vegan" />Vegan</label
+        ><br />
+        <label for="description">Description: <input type="text" name="description" required /></label><br />
+        <br />
+        <button type="submit">Send Recipe</button>
+      </fieldset>
+    </form>
+
+    <footer>
+      <p>Annamaria Marino | DAM | Proyecto Intermodular</p>
+      <marquee direction="down" width="700" height="100" behavior="alternate">
+        <marquee behavior="alternate">🍕🍔🍟🍜🥘</marquee>
+      </marquee>
+    </footer>
+  </body>
+</html>
