@@ -1,7 +1,7 @@
 //Consultar el archivo README para más información sobre los módulos.
 
-console.log("Annamaria Marino | 2024/5 | Florida Universitària \n");
-console.log("Ejercicio de configuracion prototipo de servidor (PI_005_Prototipo)");
+console.log("Annamaria Marino\n");
+console.log("Ejercicio Proyecto Intermodular");
 
 //npm run dev
 const express = require("express");
