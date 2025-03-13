@@ -27,7 +27,7 @@ router.post("/formulario", (req, res) => {
   console.log(req.body.nombre);
   console.log(req.body.apellido);
   console.log(req.body.email);
-  res.redirect("http://127.0.0.1:5500/src/index.html");
+  res.redirect("https://annahexe.github.io/Frontend_Recipes/");
 });
 
 router.post("/addRecipe", (req, res) => {
