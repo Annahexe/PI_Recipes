@@ -41,6 +41,23 @@ router.post("/addRecipe", (req, res) => {
   });
 });
 
+//RUTAS POST PARA UNITY
+
+router.post("/sendFeedback", (req, res) => {
+  console.log("Alguien ha enviado su feedback.");
+  console.log(req.body);
+  res.json({
+    star_rating: req.body.rating,
+    opinion: req.body.opinion,
+  });
+});
+
+router.post("/rutaTest5", (req, res) => {
+  console.log("Alguien ha accedito a Ruta Test 5");
+  console.log(req.body);
+  res.send("Test Ruta POST 5");
+});
+
 //RUTAS GET
 
 router.get("/about", (req, res) => {
